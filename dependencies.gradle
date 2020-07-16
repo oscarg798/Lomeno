@@ -19,6 +19,20 @@ allprojects {
 
 ext {
 
+    //BINTRAY
+    artifacId = 'Lomeno'
+    bintrayRepoName = 'lomeno'
+    bintrayProjectDescription = 'Some utils to log events to multiple sources'
+    bintrayVersionName = '1.0.1'
+
+    license = 'MIT'
+    siteUrl = 'https://github.com/oscarg798/Lomeno'
+    gitUrl = 'https://github.com/oscarg798/Lomeno'
+
+    packageId = 'com.oscarg798.lomeno'
+
+    //LIBRARIES
+
     archLifecycleVersion = "1.1.1"
 
     //Android - Support

@@ -1,0 +1,43 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = packageId
+
+version = bintrayVersionName
+
+
+install {
+
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId packageId
+                artifactId artifacId
+
+                name bintrayRepoName
+                description bintrayProjectDescription
+                url gitUrl
+
+                licenses {
+                    license {
+                        name 'MIT'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'oscarg798'
+                        name 'Oscar Gallon'
+                        email 'oscarg798@gmail.com'
+                    }
+                }
+                scm {
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
+                }
+            }
+        }
+    }
+}
+

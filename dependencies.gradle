@@ -23,7 +23,7 @@ ext {
     artifacId = 'Lomeno'
     bintrayRepoName = 'lomeno'
     bintrayProjectDescription = 'Some utils to log events to multiple sources'
-    bintrayVersionName = '1.0.1'
+    bintrayVersionName = '1.0.2'
 
     license = 'MIT'
     siteUrl = 'https://github.com/oscarg798/Lomeno'

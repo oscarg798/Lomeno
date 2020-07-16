@@ -10,7 +10,7 @@ install {
     repositories.mavenInstaller {
         pom {
             project {
-                packaging 'aar'
+                packaging 'jar'
                 groupId packageId
                 artifactId artifacId
 
@@ -41,3 +41,23 @@ install {
     }
 }
 
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+task javadoc(type: Javadoc) {
+    enabled = false
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath())
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}

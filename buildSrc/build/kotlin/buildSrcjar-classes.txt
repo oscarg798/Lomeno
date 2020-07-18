@@ -1,0 +1,1 @@
+/Users/oscargallon/Downloads/Lomeno/buildSrc/build/classes/kotlin/main/com/oscarg798/lomeno/BintrayConstanst.class:/Users/oscargallon/Downloads/Lomeno/buildSrc/build/classes/kotlin/main/com/oscarg798/lomeno/LibraryConstants.class

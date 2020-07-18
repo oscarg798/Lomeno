@@ -12,8 +12,8 @@ plugins {
 
 
 bintray {
-    user = "oscarg798"
-    key = "6cbc9cf7037ac1f1459c9ee452e82da202229606"
+    user = "xxx"
+    key = "xxx"
     publish = true
 
     setPublications(LibraryConstants.publicationName)

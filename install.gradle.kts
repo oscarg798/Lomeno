@@ -13,30 +13,30 @@ val sourcesJar by tasks.creating(Jar::class) {
 
 configure<PublishingExtension> {
     publications {
-        create<MavenPublication>(LibraryConstants.publicationName) {
-            groupId = LibraryConstants.artifactGroup
-            artifactId = LibraryConstants.artifactName
-            version = LibraryConstants.artifactVersion
+        create<MavenPublication>(LibraryConstants.PUBLICATION_NAME) {
+            groupId = LibraryConstants.ARTIFACT_GROUP
+            artifactId = LibraryConstants.ARTIFACT_NAME
+            version = LibraryConstants.VERSION
             from(components["java"])
             artifact(sourcesJar)
 
             pom.withXml {
                 asNode().apply {
                     appendNode("packaging", "jar")
-                    appendNode("description", LibraryConstants.pomDesc)
+                    appendNode("description", LibraryConstants.POM_DESCRIPTION)
                     appendNode("name", rootProject.name)
-                    appendNode("url", LibraryConstants.pomUrl)
+                    appendNode("url", LibraryConstants.POM_URL)
                     appendNode("licenses").appendNode("license").apply {
-                        appendNode("name", LibraryConstants.pomLicenseName)
-                        appendNode("url", LibraryConstants.pomLicenseUrl)
-                        appendNode("distribution", LibraryConstants.pomLicenseDist)
+                        appendNode("name", LibraryConstants.LICENSE_NAME)
+                        appendNode("url", LibraryConstants.LICENSE_URL)
+                        appendNode("distribution", LibraryConstants.LICENSE_DIST)
                     }
                     appendNode("developers").appendNode("developer").apply {
-                        appendNode("id", LibraryConstants.pomDeveloperId)
-                        appendNode("name", LibraryConstants.pomDeveloperName)
+                        appendNode("id", LibraryConstants.DEVELOPER)
+                        appendNode("name", LibraryConstants.DEVELOPER_NAME)
                     }
                     appendNode("scm").apply {
-                        appendNode("url", LibraryConstants.pomScmUrl)
+                        appendNode("url", LibraryConstants.POM_SRC_URL)
                     }
                 }
             }

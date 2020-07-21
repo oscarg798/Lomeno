@@ -1,3 +1,6 @@
 package com.oscarg798.lomeno.event
 
-interface LogSource
+interface LogSource {
+
+    val name: String
+}

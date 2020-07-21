@@ -1,1 +1,1 @@
-/Users/oscargallon/Downloads/Lomeno/buildSrc/build/classes/kotlin/main/com/oscarg798/lomeno/BintrayConstanst.class:/Users/oscargallon/Downloads/Lomeno/buildSrc/build/classes/kotlin/main/com/oscarg798/lomeno/LibraryConstants.class
+/Users/oscargallon/Developer/Lomeno/buildSrc/build/classes/kotlin/main/com/oscarg798/lomeno/BintrayConstanst.class:/Users/oscargallon/Developer/Lomeno/buildSrc/build/classes/kotlin/main/com/oscarg798/lomeno/Dependencies.class:/Users/oscargallon/Developer/Lomeno/buildSrc/build/classes/kotlin/main/com/oscarg798/lomeno/LibraryConstants.class

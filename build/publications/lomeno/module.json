@@ -3,7 +3,7 @@
   "component": {
     "group": "com.oscarg798.lomeno",
     "module": "Lomeno",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -11,7 +11,7 @@
   "createdBy": {
     "gradle": {
       "version": "6.1.1",
-      "buildId": "ajw3v3e6pra7nh5ealss7yghcu"
+      "buildId": "ofgrqmf6jbfmfdnrhbvha2nova"
     }
   },
   "variants": [
@@ -28,13 +28,13 @@
       },
       "files": [
         {
-          "name": "Lomeno-1.0.8.jar",
-          "url": "Lomeno-1.0.8.jar",
-          "size": 16660,
-          "sha512": "3f97c65d97478b111cc757da589f172cbfbeb316eea974809a8f3d915adc673140d747935015f1c053e1c99e0eb8710d9fd7a47e1e9c2da77e2caddf04b47452",
-          "sha256": "7edd49d88f2c708eb4619b9a53ef9f0e25f7c62281c78cbace9b6646a33c8ac6",
-          "sha1": "125a888dff561a141b90fd763e4a597e80ac098e",
-          "md5": "3a6477ac229f310752d3b644019a286c"
+          "name": "Lomeno-1.0.9.jar",
+          "url": "Lomeno-1.0.9.jar",
+          "size": 17549,
+          "sha512": "4a596c6d712379b22104c497a39e1c26af297cdc843b3a635334c5a80aaffdfa5c10eef9417909162f140dc301447b0b6e0aa7a56b6f5cc6f61d46c7fc4dc4c8",
+          "sha256": "554a8b1ef013f7cfea315302c0b8dd50d03845b262f45db45b8d5aa06aea5092",
+          "sha1": "6fb0a42b1a71edb1cbb97eb1b416f3735a28e7e3",
+          "md5": "70e576973c10c9fd93455c6d8198f576"
         }
       ]
     },
@@ -67,13 +67,13 @@
       ],
       "files": [
         {
-          "name": "Lomeno-1.0.8.jar",
-          "url": "Lomeno-1.0.8.jar",
-          "size": 16660,
-          "sha512": "3f97c65d97478b111cc757da589f172cbfbeb316eea974809a8f3d915adc673140d747935015f1c053e1c99e0eb8710d9fd7a47e1e9c2da77e2caddf04b47452",
-          "sha256": "7edd49d88f2c708eb4619b9a53ef9f0e25f7c62281c78cbace9b6646a33c8ac6",
-          "sha1": "125a888dff561a141b90fd763e4a597e80ac098e",
-          "md5": "3a6477ac229f310752d3b644019a286c"
+          "name": "Lomeno-1.0.9.jar",
+          "url": "Lomeno-1.0.9.jar",
+          "size": 17549,
+          "sha512": "4a596c6d712379b22104c497a39e1c26af297cdc843b3a635334c5a80aaffdfa5c10eef9417909162f140dc301447b0b6e0aa7a56b6f5cc6f61d46c7fc4dc4c8",
+          "sha256": "554a8b1ef013f7cfea315302c0b8dd50d03845b262f45db45b8d5aa06aea5092",
+          "sha1": "6fb0a42b1a71edb1cbb97eb1b416f3735a28e7e3",
+          "md5": "70e576973c10c9fd93455c6d8198f576"
         }
       ]
     }

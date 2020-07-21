@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LomenoTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-07-21T14:38:40" hostname="oscargallons-MacBook-Pro.local" time="0.578">
+  <properties/>
+  <testcase name="given an event with a source not supported by any child logger when log is called then it should throw LogSourceNotSupportedException" classname="LomenoTest" time="0.543"/>
+  <testcase name="given an event supported by one source when log is called then it should be logged just to the child logger that support the source" classname="LomenoTest" time="0.023"/>
+  <testcase name="given an event supported by multiple source when log is called then it should be logged is all the sources" classname="LomenoTest" time="0.006"/>
+  <testcase name="given a unique identifier for the event when identify is called then it should identify in all the loggers" classname="LomenoTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

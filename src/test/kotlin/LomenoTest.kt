@@ -9,9 +9,20 @@ import io.mockk.verify
 import org.junit.Before
 import org.junit.Test
 
-object FirebaseSource : LogSource
-object CrashlytcisSource : LogSource
-object AnotherSource : LogSource
+object FirebaseSource : LogSource {
+    override val name: String
+        get() = "F"
+}
+
+object CrashlytcisSource : LogSource {
+    override val name: String
+        get() = "G"
+}
+
+object AnotherSource : LogSource {
+    override val name: String
+        get() = "H"
+}
 
 class LomenoTest {
 

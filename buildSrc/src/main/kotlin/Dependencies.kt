@@ -13,7 +13,7 @@ object LibraryConstants {
     const val PUBLICATION_NAME = "lomeno"
     const val ARTIFACT_NAME = "Lomeno"
     const val ARTIFACT_GROUP = "com.oscarg798.lomeno"
-    const val VERSION = "1.0.9"
+    const val VERSION = "1.1.0"
 
     const val POM_URL = "https://github.com/oscarg798/Lomeno"
     const val POM_SRC_URL = "https://github.com/oscarg798/Lomeno"

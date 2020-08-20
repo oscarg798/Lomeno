@@ -24,6 +24,7 @@ object AnotherSource : LogSource {
         get() = "H"
 }
 
+
 class LomenoTest {
 
     private val firebaseLogger = relaxedMockk<Logger>()
@@ -38,8 +39,8 @@ class LomenoTest {
         every { event.isSourceSupported(AnotherSource) } answers { false }
         logger = Lomeno(
             mapOf(
-                (FirebaseSource to firebaseLogger),
-                (CrashlytcisSource to crashlytcisLogger)
+                (FirebaseSource to listOf(firebaseLogger)),
+                (CrashlytcisSource to listOf(crashlytcisLogger))
             )
         )
     }

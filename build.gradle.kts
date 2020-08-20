@@ -10,7 +10,7 @@ apply {
 
 plugins {
     java
-    kotlin("jvm") version "1.3.72"
+    kotlin("jvm") version "1.4.0"
     id("com.jfrog.bintray") version "1.8.5"
 }
 
@@ -53,7 +53,7 @@ repositories {
 }
 
 dependencies {
-    implementation(kotlin("stdlib", "1.3.72"))
+    implementation(kotlin("stdlib", "1.4.0"))
     implementation(Dependencies.OK_HTTP)
 
     testImplementation(Dependencies.JUNIT)

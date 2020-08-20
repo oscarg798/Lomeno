@@ -4,7 +4,7 @@ import com.oscarg798.lomeno.event.LogEvent
 import com.oscarg798.lomeno.event.LogSource
 import com.oscarg798.lomeno.exceptions.LogSourceNotSupportedException
 
-class Lomeno(private val childLoggers: Map<LogSource, Logger>) : Logger {
+class Lomeno(private val childLoggers: Map<LogSource, Collection<Logger>>) : Logger {
 
     override fun log(logEvent: LogEvent) {
         val eventSupporters = childLoggers
@@ -16,15 +16,22 @@ class Lomeno(private val childLoggers: Map<LogSource, Logger>) : Logger {
             throw LogSourceNotSupportedException(logEvent.name)
         }
 
-        eventSupporters.values.forEach { logger ->
-            logger.log(logEvent)
-
+        eventSupporters.values.forEach { loggerList ->
+            loggerList.forEach { logger ->
+                logger.log(logEvent)
+            }
         }
     }
 
     override fun identify(id: String) {
-        childLoggers.values.forEach {
-            it.identify(id)
+        childLoggers.values.forEach { loggers ->
+            loggers.forEach { it.identify(id) }
+        }
+    }
+
+    override fun flush() {
+        childLoggers.values.forEach { loggers ->
+            loggers.forEach { it.flush() }
         }
     }
 }

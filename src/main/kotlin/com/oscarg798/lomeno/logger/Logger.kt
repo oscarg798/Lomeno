@@ -7,5 +7,7 @@ interface Logger {
     fun log(logEvent: LogEvent)
 
     fun identify(id: String)
+
+    fun flush()
 }
 
